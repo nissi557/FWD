@@ -1,0 +1,27 @@
+body{
+    background-color:greenyellow;
+}
+h1{
+    font-size:100px;
+    color: brown;
+}
+p{
+    color:blue ;
+}
+li{
+    display:inline;
+    list-style: none;
+}
+h2,h3{
+    color: darkmagenta;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div{
+    width: 100px;
+    background-color: darkslategray;
+    height: 100px;
+    margin: 10px;
+}
+div p{
+    background-color: indianred;
+}
