@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function color()
+        {
+            var a,i,d,b,c,j=0,k=0;
+            a=new Array();
+            b=new Array();
+            c=new Array();
+            for(i=0;i<6;i++)
+            {
+                a[i]=prompt("Enter a colour:");
+            }
+            i=0;
+            while(i<6)
+            {
+                d=a[i].length;
+                if(d%2==0)
+                {
+                    b[j]=a[i]
+                    j++;
+                } 
+                else{
+                    c[k]=a[i];
+                    k++;
+                }  
+                i++
+            }
+            document.getElementById("t1").value=b;
+            document.getElementById("t2").value=c;
+        }
+    </script>
+</head>
+<body>
+    <form onclick="color()">
+        Even colours<input type="text" id="t1"/><br>
+        Odd colours <input type="text" id="t2"/><br>
+    </form>
+    <button onclick="color()"></button>
+</body>
+</html>
